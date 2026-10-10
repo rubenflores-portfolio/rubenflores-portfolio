@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of a graphic designer, video editor, and photographer available for remote opportunities.">
+<title>Ruben Flores — Creative Portfolio</title>
+<style>
+:root { color-scheme: dark; --bg: #0b0c0f; --panel: #121419; --panel2: #191c22; --text: #f4f4f2; --muted: #a6a9b3; --line: #292d35; --accent: #a49cff; --accent2: #c9f879; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: radial-gradient(ellipse at 15% 0%, #24203d 0, transparent 32%), radial-gradient(ellipse at 95% 35%, #17251f 0, transparent 24%), var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+.root { min-height: 100vh; width: 100%; background: var(--bg); border-radius: 0; }
+.wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.nav { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 11px; font-weight: 750; letter-spacing: -.04em; }
+.brand-mark { width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 900; }
+.navlinks { display: flex; align-items: center; gap: 27px; color: var(--muted); font-size: 13px; }
+.navlinks a:hover { color: var(--text); }
+.pill { border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line)); padding: 11px 16px; border-radius: 999px; color: var(--text) !important; background: color-mix(in srgb, var(--accent) 8%, var(--panel)); }
+.hero { padding: 86px 0 72px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 55px; align-items: center; }
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); text-transform: uppercase; font-size: 11px; font-weight: 750; letter-spacing: .16em; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent2); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent2) 16%, transparent); }
+h1 { font-size: clamp(44px, 6.2vw, 76px); line-height: .99; letter-spacing: -.075em; margin: 24px 0 23px; font-weight: 800; }
+h1 span { color: var(--accent); }
+.lead { max-width: 570px; color: var(--muted); line-height: 1.8; font-size: 16px; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 12px; padding: 14px 19px; border: 1px solid var(--line); font-weight: 700; font-size: 13px; transition: transform .2s, opacity .2s; cursor: pointer; }
+.btn:hover { transform: translateY(-2px); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+.btn.secondary { background: var(--panel); }
+.hero-art { min-height: 410px; position: relative; border: 1px solid #39364f; border-radius: 28px; overflow: hidden; background: radial-gradient(circle at 70% 25%, color-mix(in srgb, var(--accent) 55%, transparent), transparent 37%), linear-gradient(145deg, #1c1b28, var(--panel)); display: flex; align-items: center; justify-content: center; box-shadow: 0 24px 90px #00000035; }
+.art-orb { width: 225px; height: 225px; border-radius: 50%; background: linear-gradient(140deg, #d7ff8b 0%, #8d82ff 48%, #34345b 100%); filter: saturate(.9); box-shadow: 0 25px 80px #756bff35; position: relative; }
+.art-orb:before { content: ""; position: absolute; width: 115px; height: 150px; border-radius: 60% 40% 48% 52%; background: #171923; top: 37px; left: 55px; transform: rotate(28deg); opacity: .92; }
+.art-orb:after { content: "✳"; position: absolute; font-size: 70px; color: #fff; top: -32px; right: -39px; text-shadow: 0 4px 28px #ffffff50; }
+.art-label { position: absolute; left: 20px; bottom: 20px; right: 20px; display: flex; justify-content: space-between; gap: 12px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
+.floating { position: absolute; right: 20px; top: 22px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 14px; background: color-mix(in srgb, var(--panel) 88%, transparent); font-size: 12px; line-height: 1.5; }
+.floating strong { display: block; font-size: 16px; color: var(--text); }
+.section { padding: 72px 0; border-top: 1px solid var(--line); }
+.section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; }
+.kicker { color: var(--accent); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .17em; }
+h2 { font-size: clamp(30px, 4vw, 43px); letter-spacing: -.055em; line-height: 1.05; margin: 12px 0 0; }
+.section-note { color: var(--muted); max-width: 400px; line-height: 1.7; font-size: 13px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.filter { border: 1px solid var(--line); background: transparent; color: var(--muted); padding: 9px 14px; border-radius: 999px; cursor: pointer; font-size: 12px; }
+.filter.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+.project { background: linear-gradient(160deg, color-mix(in srgb, var(--panel2) 45%, var(--panel)), var(--panel)); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; transition: transform .2s, border-color .2s, box-shadow .2s; }
+.project:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 15px 38px #00000030; }
+.project[hidden] { display: none; }
+.thumb { height: 220px; display: grid; place-items: center; position: relative; overflow: hidden; }
+.thumb:before, .thumb:after { content: ""; position: absolute; }
+.thumb.photo { background: linear-gradient(145deg,#c9c4b8,#655d54 50%,#24282a); }
+.thumb.photo:before { width: 125px; height: 170px; border-radius: 65px 65px 18px 18px; background: linear-gradient(90deg,#25262a,#a49b90 48%,#33343a); transform: rotate(8deg); bottom: -20px; }
+.thumb.photo:after { width: 95px; height: 95px; border-radius: 50%; background: linear-gradient(135deg,#d8c7b0,#766252); top: 25px; left: calc(50% - 40px); }
+.thumb.design { background: #d7ff8b; }
+.thumb.design:before { width: 165px; height: 195px; background: #6d61f7; transform: rotate(-11deg); border-radius: 7px; box-shadow: 15px 12px 0 #191a24; }
+.thumb.design:after { content: "DESIGN\A WITH INTENT"; white-space: pre; color: #fff; font-size: 25px; line-height: .94; font-weight: 900; letter-spacing: -.07em; transform: rotate(-11deg); text-align: left; z-index: 1; }
+.thumb.video { background: linear-gradient(140deg,#151824,#3b2b5d,#8b7fff); }
+.thumb.video:before { width: 135px; height: 180px; border: 2px solid #ffffff9c; border-radius: 14px; transform: rotate(12deg); background: linear-gradient(155deg,#d8ff8b55,#ffffff05); }
+.thumb.video:after { content: "▶"; color: white; font-size: 40px; z-index: 1; margin-left: 7px; }
+.thumb.social { background: linear-gradient(135deg,#f5b2a6,#8d82ff); }
+.thumb.social:before { width: 150px; height: 175px; background: #f6f2e9; border-radius: 12px; transform: rotate(-7deg); box-shadow: 12px 9px 0 #252431; }
+.thumb.social:after { content: "SOCIAL\A STORIES"; white-space: pre; text-align: center; color: #252431; font-size: 23px; line-height: .95; font-weight: 900; z-index: 1; transform: rotate(-7deg); }
+.thumb.custom { background: repeating-linear-gradient(135deg,var(--panel2),var(--panel2) 12px,var(--panel) 12px,var(--panel) 24px); }
+.thumb.custom:after { content: "+"; font-size: 65px; color: var(--accent); font-weight: 200; }
+.project-info { padding: 17px 18px 19px; }
+.project-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.project h3 { margin: 0; font-size: 15px; letter-spacing: -.02em; }
+.tag { color: var(--muted); font-size: 10px; border: 1px solid var(--line); padding: 5px 8px; border-radius: 999px; white-space: nowrap; }
+.project p { color: var(--muted); font-size: 12px; line-height: 1.65; margin: 11px 0 0; }
+.placeholder-note { margin-top: 17px; color: var(--muted); font-size: 11px; }
+.about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 40px; }
+.about-card { border: 1px solid var(--line); border-radius: 22px; padding: 25px; background: var(--panel); }
+.about-card h3 { margin: 0 0 10px; font-size: 18px; }
+.about-card p { color: var(--muted); line-height: 1.8; font-size: 13px; margin: 0; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; }
+.stat { background: var(--panel2); padding: 17px; border-radius: 14px; }
+.stat strong { font-size: 24px; display: block; letter-spacing: -.05em; }
+.stat span { display: block; font-size: 11px; color: var(--muted); margin-top: 5px; }
+.skills { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 19px; }
+.skill { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); font-size: 12px; }
+.timeline { display: grid; gap: 0; }
+.timeline-item { display: grid; grid-template-columns: 145px 1fr; gap: 24px; padding: 23px 0; border-bottom: 1px solid var(--line); }
+.timeline-item:first-child { border-top: 1px solid var(--line); }
+.timeline-date { color: var(--muted); font-size: 12px; padding-top: 3px; }
+.timeline-item h3 { margin: 0 0 7px; font-size: 15px; }
+.timeline-item p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.contact { border: 1px solid var(--line); border-radius: 26px; padding: clamp(25px,5vw,48px); background: radial-gradient(circle at 100% 0%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 40%),var(--panel); display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.contact h2 { max-width: 530px; }
+.contact p { color: var(--muted); line-height: 1.7; font-size: 13px; max-width: 500px; }
+footer { padding: 25px 0 34px; color: var(--muted); font-size: 11px; display: flex; justify-content: space-between; gap: 20px; }
+footer a { color: var(--text); }
+@media (max-width: 800px) { .hero { grid-template-columns: 1fr; gap: 35px; padding: 60px 0; } .hero-art { min-height: 330px; } .projects { grid-template-columns: repeat(2,1fr); } .about-grid { grid-template-columns: 1fr; } .section-head { align-items: start; flex-direction: column; } }
+@media (max-width: 560px) { .wrap { width: min(100% - 28px,1120px); } .nav { height: 66px; } .navlinks { gap: 13px; } .navlinks a:not(.pill) { display: none; } .hero { padding: 48px 0; } .projects { grid-template-columns: 1fr; } .thumb { height: 235px; } .section { padding: 54px 0; } .timeline-item { grid-template-columns: 1fr; gap: 8px; } .contact { align-items: flex-start; flex-direction: column; } footer { flex-direction: column; } }
+</style>
+</head>
+<body>
+<div class="root">
+  <header class="wrap nav">
+    <a class="brand" href="#home" aria-label="Go to home"><span class="brand-mark">RF</span><span>RUBEN FLORES<span style="color:var(--accent)">.</span></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a class="pill" href="#contact">Let's talk ↗</a></nav>
+  </header>
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Creative portfolio · Available for remote opportunities</div>
+        <h1>Creative visuals.<br><span>Clear stories.</span></h1>
+        <p class="lead">I'm Ruben Flores, a Graphic Designer, Video Editor, Photographer, and IT college student. I enjoy turning ideas into thoughtful visuals, from studio photography and photo editing to graphic design and short-form video. I combine creative practice with a technical, problem-solving mindset.</p>
+        <div class="actions"><a class="btn primary" href="#work">Explore my work <span>↘</span></a><a class="btn secondary" href="#contact">Contact me <span>↗</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract creative portfolio artwork">
+        <div class="floating"><strong>3 years</strong>Photography experience</div>
+        <div class="art-orb"></div>
+        <div class="art-label"><span>Design / Motion / Photo</span><span>Creative portfolio · 2026</span></div>
+      </div>
+    </section>
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Selected work</div><h2>Photography, design, and motion.</h2></div><p class="section-note">The gallery is organized for photography, graphic design, video editing, and social media content. The illustrated cards are temporary placeholders—swap them for your own photos, designs, and video links before sending this portfolio to employers or clients.</p></div>
+        <div class="filters" role="group" aria-label="Filter portfolio work"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="photo">Photography</button><button class="filter" data-filter="design">Graphic design</button><button class="filter" data-filter="video">Video editing</button><button class="filter" data-filter="social">Social media</button></div>
+        <div class="projects" id="projectGrid">
+          <article class="project" data-category="photo"><div class="thumb photo" aria-label="Abstract photography placeholder"></div><div class="project-info"><div class="project-top"><h3>Portrait Photography</h3><span class="tag">Photography</span></div><p>A place for selected portraits and studio photography.</p><div class="placeholder-note">Replace with your photo and project details.</div></div></article>
+          <article class="project" data-category="design"><div class="thumb design" aria-label="Graphic design placeholder"></div><div class="project-info"><div class="project-top"><h3>Visual Design Study</h3><span class="tag">Graphic design</span></div><p>A place for posters, layouts, branding explorations, or digital artwork.</p><div class="placeholder-note">Replace with an original design sample.</div></div></article>
+          <article class="project" data-category="video"><div class="thumb video" aria-label="Video editing placeholder"></div><div class="project-info"><div class="project-top"><h3>Short-Form Video</h3><span class="tag">Video editing</span></div><p>A place for a reel, promotional edit, or short video project.</p><div class="placeholder-note">Add a video link or thumbnail.</div></div></article>
+          <article class="project" data-category="social"><div class="thumb social" aria-label="Social media design placeholder"></div><div class="project-info"><div class="project-top"><h3>Social Media Content</h3><span class="tag">Social media</span></div><p>A place for post designs, story layouts, and content sets.</p><div class="placeholder-note">Add actual campaign or post samples.</div></div></article>
+          <article class="project" data-category="photo"><div class="thumb custom" aria-label="Additional photography placeholder"></div><div class="project-info"><div class="project-top"><h3>Event or Lifestyle Photos</h3><span class="tag">Photography</span></div><p>Use this space for event coverage, lifestyle shots, or another photo series.</p><div class="placeholder-note">Add your images and a short description.</div></div></article>
+          <article class="project" data-category="design"><div class="thumb custom" aria-label="Additional design placeholder"></div><div class="project-info"><div class="project-top"><h3>Personal Creative Project</h3><span class="tag">Design</span></div><p>Show a project that reflects your process, style, and attention to detail.</p><div class="placeholder-note">Only include work you created or have permission to show.</div></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">About the creative</div><h2>Creative thinking, practical skills.</h2></div></div>
+        <div class="about-grid">
+          <div><div class="about-card"><h3>My approach</h3><p>I enjoy creating visuals that feel considered, communicate clearly, and fit their purpose. My photography experience has helped me build an eye for composition and detail, while my IT studies strengthen my technical and problem-solving skills.</p></div><div class="stats"><div class="stat"><strong>~3 yrs</strong><span>Photography experience</span></div><div class="stat"><strong>Remote</strong><span>Open to remote work</span></div></div></div>
+          <div><div class="about-card"><h3>Tools & skills</h3><p>Tools and capabilities I can bring to creative projects and day-to-day work.</p><div class="skills"><span class="skill">Canva</span><span class="skill">Adobe Photoshop</span><span class="skill">Adobe Illustrator</span><span class="skill">CapCut</span><span class="skill">Photography</span><span class="skill">Photo editing</span><span class="skill">Social media content</span><span class="skill">Microsoft Office</span><span class="skill">Google Workspace</span><span class="skill">Basic IT troubleshooting</span></div></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">Experience & education</div><h2>Learning by doing.</h2></div><p class="section-note">Update the details below with your exact dates and education information before sending your portfolio.</p></div>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-date">Approximately 3 years</div><div><h3>Photographer · Puhon Studio</h3><p>Photographer at a small studio business, with experience creating and editing photos. Add your specific shoot types and responsibilities, and include only work you created or have permission to share.</p></div></div>
+          <div class="timeline-item"><div class="timeline-date">Current</div><div><h3>IT College Student</h3><p>Building technical knowledge alongside creative skills. Add your school, program title, and expected graduation date if you would like to include them.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="wrap"><div class="contact"><div><div class="kicker">Have a project in mind?</div><h2>Let’s create something meaningful.</h2><p>I’m open to remote opportunities, freelance projects, and collaborations in graphic design, video editing, and photography. Reach out by email or connect with me on LinkedIn.</p></div><div class="actions" style="margin-top:0"><a class="btn primary" href="mailto:bubblesgamay32@gmail.com">Email me ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/rubenflores32" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><button class="btn secondary" id="copyEmail" type="button">Copy email</button></div></div>
+        <p id="emailHelp" style="color:var(--muted);font-size:12px;margin:14px 3px 0">Add your own work samples in the gallery before publishing.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><span>© <span id="year">2026</span> Ruben Flores. Creative portfolio.</span><span><a href="#home">Back to top ↑</a> · Design / Video / Photography</span></footer>
+</div>
+<script>
+const filterButtons = document.querySelectorAll('.filter');
+const projects = document.querySelectorAll('.project');
+filterButtons.forEach(button => button.addEventListener('click', () => {
+  filterButtons.forEach(item => item.classList.toggle('active', item === button));
+  const filter = button.dataset.filter;
+  projects.forEach(project => { project.hidden = filter !== 'all' && project.dataset.category !== filter; });
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('copyEmail').addEventListener('click', async () => {
+  const email = 'bubblesgamay32@gmail.com';
+  const help = document.getElementById('emailHelp');
+  try { await navigator.clipboard.writeText(email); help.textContent = 'Email copied: ' + email; }
+  catch { help.textContent = 'Your email is: ' + email; }
+});
+</script>
+</body>
+</html>
